@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taskify - MARC JAIRUS P. RIVERA</title>
+<link rel="stylesheet" href="Style3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+  <h1>Taskify</h1>
+  <h3 class="author">By MARC JAIRUS P. RIVERA</h3>
+
+  <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+  <div class="input-area">
+    <input type="text" id="taskInput" placeholder="Enter task...">
+    <button id="addBtn"><i class="fa fa-plus"></i> Add</button>
+  </div>
+
+  <div class="controls">
+    <button onclick="sortAsc()"><i class="fa fa-arrow-up"></i> Asc</button>
+    <button onclick="sortDesc()"><i class="fa fa-arrow-down"></i> Desc</button>
+    <button onclick="resetOrder()"><i class="fa fa-rotate-left"></i> Reset</button>
+  </div>
+
+  <ul id="taskList"></ul>
+
+  <div class="stats">
+    <p>Total Tasks: <span id="totalCount">0</span></p>
+    <p>Completed: <span id="completedCount">0</span></p>
+    <p>Deleted: <span id="deletedCount">0</span></p>
+    <p>Edited: <span id="editedCount">0</span></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

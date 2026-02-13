@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #222;
+  color: #eee;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+body.dark .container {
+  background: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.author {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.input-area input {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-area input:focus {
+  border-color: #007BFF;
+}
+
+.input-area button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background: #007BFF;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: background 0.3s;
+}
+
+.input-area button:hover {
+  background: #0056b3;
+}
+
+.controls button {
+  margin: 5px 5px 20px 0;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+ul#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+li.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  transition: background 0.3s;
+}
+
+li.task.selected {
+  background: #f0f8ff;
+}
+
+li.task:hover {
+  background: #e6f7ff;
+}
+
+li.task.completed span {
+  text-decoration: line-through;
+  color: green;
+}
+
+body.dark li.task:hover {
+  background: #555;
+  color: #fff;
+}
+
+body.dark li.task.completed span {
+  color: lightgreen;
+}
+
+body.dark li.task.completed:hover {
+  color: #ccc;
+}
+
+.edit-input {
+  width: 80%;
+  font-size: 16px;
+  padding: 5px;
+}
+
+button i {
+  margin-right: 5px;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 10px 20px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s, color 0.3s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.theme-toggle:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+body.dark .theme-toggle {
+  background: #444;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+body.dark .theme-toggle:hover {
+  background: #666;
+  color: #fff;
+}
